@@ -12,5 +12,7 @@ body {
 }
 
 .box {
-    
+    background-color: #BB33BB;
+    color: white;
+    width: 300px;
 }
