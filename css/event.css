@@ -21,4 +21,29 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    border-radius: 5px;
+}
+
+#element1 {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+
+#element2 {
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+}
+
+#element3 {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+}
+
+#element4 {
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
 }
