@@ -21,7 +21,7 @@ body {
 .bg {
     width: 100vw;
     height: 100vh;
-    background-image: url('../images/octopus.avif');
+    background-image: url('../images/octopus.jpg');
     position: absolute;
     background-repeat: no-repeat;
     background-size: cover;
