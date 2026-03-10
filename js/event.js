@@ -5,6 +5,12 @@ element1.addEventListener('click', ()=>{
     element1.innerHTML = "I've been clicked! <br> Try double clicking me."
 })
 
-element1.addEventListener('dblclick', ()=> {
+element1.addEventListener('dblclick', ()=>{
     element1.innerHTML = "I've neem double clicked! <br> Try single clicking me."
+})
+
+
+element2.addEventListener('mouseover', ()=>{
+    element2.style.color = "green"
+    element2.style.backgroundColor = "blue"
 })
