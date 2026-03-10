@@ -13,12 +13,5 @@ body {
 
 
 .rectangle {
-    height: 80px;
-    width: 250px;
-    background: red;
-    margin: 3px;
-    border-radius: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    
 }
