@@ -1,21 +1,56 @@
-const element1 = document.getElementById('element1')
-const element2 = document.getElementById('element2')
+clickBox = document.querySelector('.click')
+spinBox = document.querySelector('.spin')
+moveBox = document.querySelector('.move')
+hoverBox = document.querySelector('.hover')
+dblClick = document.querySelector('.dblclick')
 
-element1.addEventListener('click', ()=>{
-    element1.innerHTML = "I've been clicked! <br> Try double clicking me."
+
+colors = ['blue', 'green', 'purple', 'red', 'white', 'yellow', 'orange', 'pink', 'indigo']
+index = 0
+
+
+clickBox.addEventListener('click', () => {
+    clickBox.style.background = colors[index]
+    index = index + 1
+    if (index == colors.length){
+        index = 0
+    }
 })
 
-element1.addEventListener('dblclick', ()=>{
-    element1.innerHTML = "I've been double clicked! <br> Try single clicking me."
+
+spinBox.addEventListener('click', () => {
+    spinBox.classList.toggle('start')
 })
 
 
-element2.addEventListener('mouseover', ()=>{
-    element2.style.color = "green"
-    element2.style.backgroundColor = "Blue"
+x = 0
+y = 0
+s = 0
+
+
+document.addEventListener('keydown', (event) => {
+    if (event.key == 'ArrowRight') {x = x + 10}
+    if (event.key == 'ArrowUp') { y = y - 10}
+    if (event.key == 'ArrowLeft') {x = x - 10}
+    if (event.key == 'ArrowDown') { y = y + 10}
+
+
+    moveBox.style.transform = `translate(${x}px, ${y}px)`
 })
 
-element2.addEventListener('mouseout', ()=>{
-    element2.style.color = "white"
-    element2.style.color = "#BB33BB"
+
+hoverBox.addEventListener('mouseenter', () => {
+    hoverBox.style.transform = "scale(3)"
+})
+hoverBox.addEventListener('mouseleave', () => {
+     hoverBox.style.transform = "scale(1)"
+
+
+})
+
+
+dblClick.addEventListener("dblclick", () => {
+    dblClick.style.transform = "scale(0.5)"
+    dblClick.style.background = "gold"
+    dblClick.textContent = "Secret unlocked!"
 })
