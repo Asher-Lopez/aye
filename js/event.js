@@ -20,3 +20,7 @@ element2.addEventListener('mouseout', ()=>{
     element2.style.color = "white"
     element2.style.backgroundColor = "#BB33BB"
 })
+
+
+
+document.addEventListener('keyup')
