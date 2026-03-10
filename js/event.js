@@ -23,4 +23,6 @@ element2.addEventListener('mouseout', ()=>{
 
 
 
-document.addEventListener('keyup')
+document.addEventListener('keyup', (event)=>{
+    console.log(event.key)
+})
