@@ -14,3 +14,8 @@ element2.addEventListener('mouseover', ()=>{
     element2.style.color = "green"
     element2.style.backgroundColor = "blue"
 })
+
+element2.addEventListener('mouseout', ()=>{
+    element2.style.color = "white"
+    element2.style.color = "#BB33BB"
+})
