@@ -30,4 +30,5 @@ document.addEventListener('keyup', (event)=>{
     if (event.key == 'ArrowDown') {
         positionY = positionY + 10
     }
+    element3.style.top = '${positionY}px'
 })
