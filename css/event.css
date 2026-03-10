@@ -1,49 +1,69 @@
+
+
 * {
     box-sizing: border-box;
 }
 
+
 body {
     display: flex;
     height: 100vh;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
     margin: 0;
-    background-color: #999999;
 }
 
-.box {
-    background-color: #BB33BB;
-    color: white;
-    width: 300px;
-    height: 50px;
-    padding: 10px;
-    margin: 10px;
+
+.rectangle {
+    height: 80px;
+    width: 250px;
+    background: red;
+    margin: 3px;
+    border-radius: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
-    border-radius: 5px;
 }
 
-#element1 {
+
+.click {
     position: absolute;
-    top: 0px;
-    left: 0px;
+    top: 20px;
+    left: 20px;
 }
 
-#element2 {
+
+.move {
     position: absolute;
-    bottom: 0px;
-    left: 0px;
+    bottom: 20px;
+    left: 20px;
 }
 
-#element3 {
+
+.hover {
     position: absolute;
-    top: 0px;
-    right: 0px;
+    top: 20px;
+    right: 20px;
 }
 
-#element4 {
+
+.dblclick {
     position: absolute;
-    bottom: 0px;
-    right: 0px;
+    bottom: 20px;
+    right: 20px;
+}
+
+
+.start {
+    animation: spin 0.1s linear infinite;
+}
+
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
 }
