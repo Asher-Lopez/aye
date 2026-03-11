@@ -1,7 +1,7 @@
 btn = document.querySelector('.btn')
 
 
-colors = ['blue', 'green', 'purple', 'red', 'white', 'yellow', 'orange', 'pink', 'indigo']
+colors = ['aqua', 'magenta', 'silver', 'azure', 'gold', 'maroon', 'olive', 'pink', 'indigo']
 index = 0
 
 
