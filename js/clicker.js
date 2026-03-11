@@ -1,7 +1,7 @@
 btn = document.querySelector('.btn')
 
 
-colors = ['aqua', 'magenta', 'silver', 'azure', 'gold', 'maroon', 'olive', 'pink', 'indigo']
+colors = ['aqua', 'magenta', 'silver', 'azure', 'gold', 'maroon', 'olive', 'pink', 'navy']
 index = 0
 
 
@@ -15,5 +15,5 @@ btn.addEventListener('click', () => {
     if (index == colors.length){
         index = 0
     }
-        btn.textContent = "Click Me!!"
+        btn.textContent = "Fat Button"
 })
