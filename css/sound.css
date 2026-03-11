@@ -22,4 +22,9 @@ body {
     border: none;
     color: rgb(192,192,192);
     cursor: pointer;
+    font-family: "Montserrat", sans-serif;
+}
+
+.btn:hover {
+    opacity: 0.9;
 }
