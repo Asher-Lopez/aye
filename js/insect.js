@@ -1,3 +1,4 @@
+history.scrollRestoration = 'manual';
 const screens = document.querySelectorAll('.screen')
 const choose_insect_btns = document.querySelectorAll('.choose-insect-btn')
 const game_container = document.getElementById('game-container')
