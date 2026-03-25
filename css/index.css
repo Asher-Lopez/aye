@@ -3,5 +3,9 @@
 }
 
 body {
-    background-image: url(images/Octoman.jpg);
+    background-image: url(images/octodad.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom center;
+    height: 100vh;
 }
