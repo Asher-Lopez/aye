@@ -23,12 +23,12 @@ a:hover {
   text-decoration: underline;
 }
 
-.search {
+.index {
     height: 200px;
     position: relative;
 }
 
-.search .btn{
+.index .btn{
     position: absolute;
     top: 0;
     left: 0px;
@@ -41,7 +41,7 @@ a:hover {
     transition: transform 1s ease;
 }
 
-.search .input {
+.index .input {
     background-color: white;
     border: 0;
     font-size: 18px;
@@ -51,14 +51,15 @@ a:hover {
     transition: width 1s ease;
 }
 
-.search .input:focus {
+.index .input:focus {
     outline: none;
 }
 
-.search.active .input {
+.index.active .input {
     width: 200px;
 }
 
-.search.active .btn {
+.index.active .btn {
     transform: translateX(198px);
 }
+
