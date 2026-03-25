@@ -1,7 +1,7 @@
 btn = document.querySelector('.btn')
-search = document.querySelector('.search')
+search = document.querySelector('.index')
 
 
 btn.addEventListener('click', () => {
-    search.classList.toggle('active')
+    index.classList.toggle('active')
 })
