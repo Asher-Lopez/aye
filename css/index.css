@@ -5,7 +5,9 @@
 body {
     background-image: url(images/octodad.png);
     background-repeat: no-repeat;
-    background-size: cover;
-    background-position: bottom center;
+    background-size: contain;
+    background-position: center;
+    background-color: #333;
     height: 100vh;
+    margin: 0;
 }
