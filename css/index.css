@@ -13,3 +13,25 @@ body {
     overflow: hidden;
     color: #FFFFFF
 }
+
+a {
+  color: #FFFFFF;
+  text-decoration: none; /* Optional: this removes the underline */
+}
+
+/* This changes the link color when you hover over it */
+a:hover {
+  color: #C0C0C0;
+  text-decoration: underline;
+}
+
+a {
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+
+a:hover {
+  color: #C0C0C0;
+  text-decoration: underline;
+}
