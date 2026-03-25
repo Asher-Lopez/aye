@@ -12,7 +12,6 @@ body {
     margin: 0;
     overflow: hidden;
     color: #FFFFFF
-
 }
 
 a {
@@ -32,7 +31,7 @@ a:hover {
     z-index: 100;
 }
 
-.index .btn{
+.index .btn {
     position: absolute;
     top: 0;
     left: 0px;
