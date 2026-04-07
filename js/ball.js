@@ -3,8 +3,10 @@ const ballRadius = 100
 const windowHeight = window.innerHeight
 const windowWidth = window.innerWidth
 let ballXPosition = windowWidth/2 - ballRadius
+let ballYPosition = windowHeight/2 - ballRadius
 let ballSpeed = 5
 let ballXDirection = 1
+let ballYDirection = 1
 
 setInterval(moveBall, 10)
 
@@ -26,6 +28,6 @@ function createBall(){
     ball.style.borderRadius = "50%"
     ball.style.backgroundColor = "green"
     ball.style.position = "absolute"
-    ball.style.top = `${windowHeight/2 - ballRadius}px`
+    ball.style.top = `${ballYPosition}px`
     ball.style.left = `${ballXPosition}px`
 }
