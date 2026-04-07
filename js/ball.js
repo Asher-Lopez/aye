@@ -7,7 +7,8 @@ let ballXPosition = windowWidth/2 - ballRadius
 setInterval(moveBall, 10)
 
 function moveBall(){
-    ball.style.left = ?
+    ballXPosition = ballXPosition + 5
+    ball.style.left = `${ballXPosition}px`
 }
 
 
