@@ -3,6 +3,11 @@ const ballRadius = 30
 const windowHeight = window.innerHeight
 const windowWidth = window.innerWidth
 
+
+
+
+
+
 createBall()
 function createBall(){
     document.body.appendChild(ball)
