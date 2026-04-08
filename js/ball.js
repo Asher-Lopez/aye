@@ -54,7 +54,7 @@ function createLPadel() {
     LPadel.style.top = `${LPadelYPosition}px`
 }
 
-document.addEventListener('keydown', (event) => {
+document.addEventListener('keyup', (event) => {
     if (event.key == 'w') {
         LPadelYPosition = LPadelYPosition - LPadelSpeed
     }
