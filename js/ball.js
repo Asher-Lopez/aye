@@ -5,7 +5,6 @@ document.body.appendChild(LPadel)
 let LPadelWidth = 20
 let LPadelHeight = 100
 let LPadelSpeed = 5
-let LPadelYPosition = windowHeight / 2 - LPadelHeight / 2
 
 const ballRadius = 30
 const windowHeight = window.innerHeight
@@ -51,7 +50,7 @@ function createLPadel() {
     LPadel.style.backgroundColor = 'blue'
     LPadel.style.position = 'absolute'
     LPadel.style.left = "50px"
-    LPadel.style.top = `${LPadelYPosition}px`
+    LPadel.style.top = `${windowHeight / 2 - LPadelHeight / 2}px`
 }
 
 document.addEventListener('keyup', (event) => {
