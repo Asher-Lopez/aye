@@ -42,8 +42,8 @@ function createBall(){
     ball.style.left = `${ballXPosition}px`
 }
 
-create LPadel()
-function create LPadel() {
+createLPadel()
+function createLPadel() {
     LPadel.style.height = `${LPadelHeight}px`
     LPadel.style.width = `${LPadelWidth}px`
     LPadel.style.backgroundColor = 'blue'
