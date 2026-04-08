@@ -4,6 +4,7 @@ const LPadel = document.createElement('div')
 document.body.appendChild(LPadel)
 let LPadelWidth = 20
 let LPadelHeight = 100
+let LPadelSpeed = 5
 
 const windowHeight = window.innerHeight
 const windowWidth = window.innerWidth
@@ -49,5 +50,13 @@ function create LPadel() {
     LPadel.style.position = 'absolute'
     LPadel.style.left = "50px"
     LPadel.style.top = `${windowHeight / 2 - LPadelHeight / 2}px`
-
 }
+
+document.addEventListener('keyup', (event) => {
+    if (event.key == 'w') {
+        //move up
+    }
+    if (event.key == 's') {
+        //move down
+    }
+})
