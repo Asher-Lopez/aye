@@ -1,7 +1,5 @@
 const windowHeight = window.innerHeight
 const windowWidth = window.innerWidth
-const ball = document.createElement('div')
-document.body.appendChild(ball)
 const LPadel = document.createElement('div')
 document.body.appendChild(LPadel)
 let LPadelWidth = 20
@@ -9,6 +7,9 @@ let LPadelHeight = 300
 let LPadelSpeed = 30
 let LPadelYPosition = windowHeight / 2 - LPadelHeight / 2
 
+\\Ball Variables
+const ball = document.createElement('div')
+document.body.appendChild(ball)
 const ballRadius = 30
 let ballXPosition = windowWidth/2 - ballRadius
 let ballYPosition = windowHeight/2 - ballRadius
