@@ -1,5 +1,5 @@
 const ball = document.createElement('div')
-const ballRadius = 100
+const LPaddel
 const windowHeight = window.innerHeight
 const windowWidth = window.innerWidth
 let ballXPosition = windowWidth/2 - ballRadius
