@@ -1,6 +1,7 @@
 const ball = document.createElement('div')
 document.body.appendChild(ball)
-const LPaddel = document.createElement('div')
+const LPadel = document.createElement('div')
+document.body.appendChild(LPadel)
 const windowHeight = window.innerHeight
 const windowWidth = window.innerWidth
 let ballXPosition = windowWidth/2 - ballRadius
