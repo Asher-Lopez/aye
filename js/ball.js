@@ -69,19 +69,20 @@ createLPaddle()
 function createLPaddle() {
     LPaddle.style.height = `${LPaddleHeight}px`
     LPaddle.style.width = `${LPaddleWidth}px`
-    LPaddle.style.backgroundColor = 'blue'
+    LPaddle.style.backgroundColor = 'black'
     LPaddle.style.position = 'absolute'
-    LPaddle.style.left = "50px"
+    LPaddle.style.left = `${LPaddleXPosition}px`
     LPaddle.style.top = `${LPaddleYPosition}px`
 }
 
-document.addEventListener('keyup', (event) => {
+wKey = false
+sKey = false
+document.addEventListener('keydown', (event) => {
     if (event.key == 'w') {
-        if (LPaddleYPosition <= 0) {
-            LPaddleYPosition = 0
+        wKey = true
         }
-        else {
-            LPaddleYPosition = LPaddleYPosition - LPaddleSpeed
+        if (event.key == 's') {
+            sKey = true
         }
     }
     if (event.key == 's') {
