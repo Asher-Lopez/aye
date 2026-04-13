@@ -16,7 +16,7 @@ document.body.appendChild(ball)
 const ballRadius = 30
 let ballXPosition = windowWidth/2 - ballRadius
 let ballYPosition = windowHeight/2 - ballRadius
-let ballSpeed = 5
+let ballSpeed = 10
 let ballXDirection = 1
 let ballYDirection = 1
 
