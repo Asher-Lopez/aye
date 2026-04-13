@@ -33,6 +33,13 @@ function moveBall(){
     if (ballXPosition < 0 || ballXPosition > windowWidth - 2 * ballRadius){
         ballXDirection = ballXDirection * -1
     }
+
+    let ballTop = ballYPosition
+    let ballBottom = ballYPosition + 2 * ballRadius
+    let ballLeft = ballXPosition
+    let LPaddleTop = LPaddleYPosition
+    let LPaddleBottom = LPaddleYPosition + LPaddleHeight
+    let LPaddleRight = LPaddleXPosition + LPaddleWidth
 }
 
 
