@@ -1,8 +1,10 @@
 const windowHeight = window.innerHeight
 const windowWidth = window.innerWidth
+
+//LPaddle Variables
 const LPadel = document.createElement('div')
 document.body.appendChild(LPadel)
-let LPadelWidth = 20
+let LPadelWidth = 10
 let LPadelHeight = 300
 let LPadelSpeed = 30
 let LPadelYPosition = windowHeight / 2 - LPadelHeight / 2
