@@ -84,14 +84,22 @@ document.addEventListener('keydown', (event) => {
         if (event.key == 's') {
             sKey = true
         }
+})
+document.addEventListener('keyup', (event) => {
+    if (event.key == 'w') {
+        wKey = false
     }
     if (event.key == 's') {
-        if (LPaddleYPosition >= windowHeight - LPaddleHeight){
-            LPaddleYPosition = windowHeight - LPaddleHeight
-        }
-        else {
-            LPaddleYPosition = LPaddleYPosition + LPaddleSpeed
-        }
+        sKey = false
+    }
+})
+
+function moveLPaddle() {
+    if (wKey == true && LPaddleYPosition > 0) {
+        LPaddleYPosition = LPaddleYPosition - LPaddleSpeed
+    }
+    if (sKey == true && LPaddelYPosition < windowHeight - LPaddleHeight) {
+        LPaddleYPosition = LPaddleYPosition + LPaddleSpeed
     }
     LPaddle.style.top = `${LPaddleYPosition}px`
-})
+}
