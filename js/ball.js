@@ -7,7 +7,7 @@ let LPadelHeight = 300
 let LPadelSpeed = 30
 let LPadelYPosition = windowHeight / 2 - LPadelHeight / 2
 
-\\Ball Variables
+//Ball Variables
 const ball = document.createElement('div')
 document.body.appendChild(ball)
 const ballRadius = 30
