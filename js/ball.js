@@ -2,12 +2,13 @@ const windowHeight = window.innerHeight
 const windowWidth = window.innerWidth
 
 //LPaddle Variables
-const LPadel = document.createElement('div')
-document.body.appendChild(LPadel)
-let LPadelWidth = 10
-let LPadelHeight = 300
-let LPadelSpeed = 30
-let LPadelYPosition = windowHeight / 2 - LPadelHeight / 2
+const LPaddle = document.createElement('div')
+document.body.appendChild(LPaddle)
+let LPaddleWidth = 10
+let LPaddleHeight = 300
+let LPaddleSpeed = 30
+let LPaddleYPosition = windowHeight / 2 - LPaddleHeight / 2
+let LPaddleXPosition = 70
 
 //Ball Variables
 const ball = document.createElement('div')
@@ -47,32 +48,32 @@ function createBall(){
     ball.style.left = `${ballXPosition}px`
 }
 
-createLPadel()
-function createLPadel() {
-    LPadel.style.height = `${LPadelHeight}px`
-    LPadel.style.width = `${LPadelWidth}px`
-    LPadel.style.backgroundColor = 'blue'
-    LPadel.style.position = 'absolute'
-    LPadel.style.left = "50px"
-    LPadel.style.top = `${LPadelYPosition}px`
+createLPaddle()
+function createLPaddle() {
+    LPaddle.style.height = `${LPaddleHeight}px`
+    LPaddle.style.width = `${LPaddleWidth}px`
+    LPaddle.style.backgroundColor = 'blue'
+    LPaddle.style.position = 'absolute'
+    LPaddle.style.left = "50px"
+    LPaddle.style.top = `${LPaddleYPosition}px`
 }
 
 document.addEventListener('keyup', (event) => {
     if (event.key == 'w') {
-        if (LPadelYPosition <= 0) {
-            LPadelYPosition = 0
+        if (LPaddleYPosition <= 0) {
+            LPaddleYPosition = 0
         }
         else {
-            LPadelYPosition = LPadelYPosition - LPadelSpeed
+            LPaddleYPosition = LPaddleYPosition - LPaddleSpeed
         }
     }
     if (event.key == 's') {
-        if (LPadelYPosition >= windowHeight - LPadelHeight){
-            LPadelYPosition = windowHeight - LPadelHeight
+        if (LPaddleYPosition >= windowHeight - LPaddleHeight){
+            LPaddleYPosition = windowHeight - LPaddleHeight
         }
         else {
-            LPadelYPosition = LPadelYPosition + LPadelSpeed
+            LPaddleYPosition = LPaddleYPosition + LPaddleSpeed
         }
     }
-    LPadel.style.top = `${LPadelYPosition}px`
+    LPaddle.style.top = `${LPaddleYPosition}px`
 })
