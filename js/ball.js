@@ -38,6 +38,10 @@ function moveBall(){
     if (ballXPosition < 0 || ballXPosition > windowWidth - 2 * ballRadius){
         ballXDirection = ballXDirection * -1
     }
+    if (ballXPosition < 0) {
+        alert("Game Over");
+        return;
+    }
 
     let ballTop = ballYPosition
     let ballBottom = ballYPosition + 2 * ballRadius
