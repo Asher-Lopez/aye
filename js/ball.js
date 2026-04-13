@@ -20,6 +20,9 @@ let ballSpeed = 5
 let ballXDirection = 1
 let ballYDirection = 1
 
+let score = 0 // Display the score and increase score by one every time the ball hits the paddle.
+let level = 1 // Display the level and increase the level by one every time the score increases by 10
+
 setInterval(moveBall, 10)
 
 function moveBall(){
